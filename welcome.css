@@ -1,0 +1,205 @@
+/*........ Interoduction part....*/
+
+.inter{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -100px;
+    overflow: hidden;
+    background-image: url(../images/OIP.jfif);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: bottom right;
+    height: 750px;
+  
+  }
+  
+  .leftpics{
+    height: 400px;
+    margin-top: 30px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+   }
+   .pizza{
+    height: 400px;
+   }
+   
+  #pizza{
+   padding: 10px;
+   border-radius: 20px;
+   height: 400px;
+   animation-name: margin;
+   animation-duration: 1.5s;
+   transition: animation 0.3s;
+  
+  }
+  
+   .overlay{
+      position: absolute;
+      border-radius: 13px;
+      height: 380px;
+      left: 100px;
+      top: 678px;
+      width: 31.5%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #d38322;
+    
+   }
+  
+   .pizza:hover .overlay{
+    opacity: 0.4;
+    
+  }
+  
+  
+   @keyframes margin{
+    0% {
+      transform: translateX(-100%);
+      opacity: 0.1;
+    } 50%{
+      transform: translateX(-50%);
+      opacity: 0.4;
+    }
+    
+    100%{
+      transform: translateX(0);
+      opacity: 1;
+    }
+  } 
+  .rightpics img{
+    padding-bottom: 10px;
+    border-radius: 20px;
+    height: 195px;
+    display: block;
+    animation-name: top;
+    animation-duration: 1.5s;
+    transition: animation ease-out 2s;
+   
+  }
+  .rightpics img:hover{
+    opacity: 0.6;
+  }
+  
+  @keyframes top{
+    0% {
+      transform: translateY(-100%);
+      opacity: 0.1;
+    } 50%{
+      transform: translateY(-50%);
+      opacity: 0.6;
+    }
+    
+    100%{
+      transform: translateY(0);
+      opacity: 1;
+    }
+  } 
+  .rightcontent{
+    width: 30%;
+    animation: in;
+    animation-duration: 1.5s;
+    transition: animation 1s ease-out;
+  }
+  @keyframes in{
+    0% {
+      transform: translateX(100%);
+      opacity: 0.1;
+    } 50%{
+      transform: translateX(50%);
+      opacity: 0.6;
+    }
+    
+    100%{
+      transform: translateX(0);
+      opacity: 1;
+    }
+  } 
+  .rightcontent h3{
+    font-family: 'Great Vibes',cursive;
+    font-size: 40px;
+    color: #d38322;
+    
+  }
+  .rightcontent h2{
+    font-family: 'Lato' , sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+  
+  }
+  .rightcontent p{
+    font-family: 'Lato' , sans-serif;
+    font-size: 20px;
+    color: #585754;
+  }
+  
+  @media only screen and (max-width:768px){
+    .inter{
+      flex: 100%;
+      flex-direction: column-reverse;
+      height: 780px;
+      background-position: right top;
+      margin-top: 60PX;
+    
+    }
+  
+    #pizza{
+      height: 250px;
+    }
+    #pizza:hover {
+      opacity: 0.6;
+  
+    }
+   .pizza:hover .overlay{
+      opacity: 0;
+    }
+  
+    .rightcontent{
+      width: 90%;
+      margin-left: 30px;
+      margin-top: 20px;
+      margin-bottom: 0;
+     
+    }
+    .rightpics img{
+      height: 130px;
+  
+     
+    }
+  
+   }
+   @media only screen and (min-width:768px)  and (max-width:1336px){
+  
+    .inter{
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    
+    }
+    .rightcontent{
+      margin-left: 120px;
+      width: 40%;
+     
+     
+    }
+    
+    .pizza:hover .overlay{
+        opacity: 0;
+      }
+
+      #pizza:hover {
+        opacity: 0.6;
+    
+      }
+    .leftpics{
+      height: 400px;
+      width: 25%;
+    }
+   }
+  
+   /*..........interduction ended......*/
+  

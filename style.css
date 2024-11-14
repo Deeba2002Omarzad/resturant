@@ -1,0 +1,447 @@
+  *{
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+
+  
+
+/*........ slider......... */
+
+  .slider {
+    margin-top: 0;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background-color: black;
+    z-index: -1;
+   
+    }
+
+.slides {
+    max-width: 100%;
+    display: none;
+    width: 100%;
+    opacity: 0.3;
+    z-index: -1;
+  }
+
+.active {
+    display: block;
+}
+
+.nav-dots {
+    text-align: center;
+    margin-top: -40px;
+   
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 1.6s ease-out;
+}
+
+.active-dot {
+    background-color: #d38322;
+}
+
+/*.......Slider responsive....*/
+
+@media only screen and (max-width:768px){
+  .slider {
+    max-width: 100%;
+    height: 280px;
+    overflow: hidden;
+    }
+   
+}
+@media only screen and (min-width:768px)  and (max-width:992px){
+  .slider {
+    max-width: 100%;
+    height: 400px;
+    overflow: hidden;
+    }
+   
+}
+
+
+/*....... Slider Ended .....*/
+
+
+/*.......Title......*/
+
+.caption{
+  font-family: 'Great Vibes',cursive;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  text-align: center;
+  justify-content: center;
+  animation-name: movement;
+  animation-direction: normal;
+  animation-duration: 2s;
+  width: 50%;
+  margin:  -400px auto;
+  margin-left: 25%;
+
+  }
+#title{
+font-weight: 700;
+font-style: normal;
+font-size: 65px;
+color: #ffffff;
+
+}
+@keyframes movement{
+  from{ margin-left: 0;}
+  to{ margin-left: 25%;}
+}
+
+
+/*........Reservbtn....*/
+#book{
+  font-family: 'Lato' , sans-serif;
+  margin-top: 40px;
+  width: 20%;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  background-color: #d38322;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+#book:hover{
+  background-color: white;
+  color: #d38322;
+  transition: 1s all ease-in-out;
+}
+
+
+/*......Title responsive .....*/
+ @media only screen and (min-width:768px)  and (max-width:992px){
+  .caption{ 
+     margin-left: 20%;
+    margin-top: -290px;
+    z-index: 0;
+  }
+  @keyframes movement{
+    from{ margin-left: 0;}
+    to{ margin-left: 20%;}
+  }
+  #title{
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .caption{
+    margin-left: 20%;
+    margin-top: -180px;
+    z-index: 0;
+    width: 60%;
+  }
+  @keyframes movement{
+    from{ margin-left: 0;}
+    to{ margin-left: 20%;}
+  }
+  #title{
+    font-size: 30px;
+  }
+  #book{
+    font-size: 14px;
+    width: 30%;
+    margin-top: 20px;
+    height:40px ;
+  }
+} 
+
+/*......Title responsive ended .....*/
+
+
+  
+
+
+
+/*........Menue ......*/
+
+.menue{
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  margin-top: 40px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.pizza1{
+  width: 15%;
+  animation: shake 3s infinite alternate;
+  margin-top: 10px;
+  margin-left: 50px;
+ 
+}
+
+@keyframes shake {
+  0% { transform: translate(0); }
+  25% { transform: translate(0,-5px ); }
+  50% { transform: translate(0 ,5px); }
+  75% { transform: translate(0 ,-5px); }
+  100% { transform: translate(0 ,5px); }}
+
+.egg{
+  width: 28%;
+  animation: shake 3s infinite alternate;
+  margin-top: 30px;
+}
+.menuecontent{
+  width: 40%;
+  margin: auto;
+  animation: apear 1s;
+}
+
+@keyframes apear{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{opacity: 1;}
+}
+.menuecontent h3{
+  font-family: 'Great Vibes',cursive;
+  font-size: 40px;
+  color: #d38322;
+  
+}
+.menuecontent h2{
+  font-family: 'Lato' , sans-serif;
+  font-size: 40px;
+  margin-bottom: 10px;
+
+}
+.menuecontent p{
+  font-family: 'Lato' , sans-serif;
+  font-size: 20px;
+  color: #585754;
+}
+.menuebtn{
+  font-family: 'Lato' , sans-serif;
+  margin-top: 20px;
+  height: 60px;
+  width: 25%;
+  background-color:#d38322;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 15px ;
+  outline: none;
+  border: none;
+}
+.menuebtn:hover{
+  background-color: white;
+  transition: all 0.5s;
+  border: 1px solid #d38322;
+  color: #d38322;
+   
+}
+
+/*.........----Responsive Menue ....-----*/
+
+
+@media only screen and  (max-width:992px){
+
+  .menuecontent h3{
+    font-size: 30px;
+    
+  }
+  .menuecontent h2{
+    font-size: 30px;
+
+  
+  }
+  .menuecontent p{
+    font-family: 'Lato' , sans-serif;
+    font-size: 15px;
+    
+  }
+  .menuebtn{
+    width: 40%;
+    height: 60px;
+    font-size: 12px;
+  }
+  .pizza1{
+    width: 15%;
+  }
+  .egg{
+    width: 24%;
+  }
+}
+
+
+
+
+/*........ Footer ..... */
+  
+/*...... First Part  .....*/
+
+.f1{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  text-align: center;
+  margin:  350px 0 auto;
+}
+
+.f1title{
+  font-family: 'Lato' , sans-serif;
+  color: white;
+  width: 40%;
+}
+
+.f1title h3{
+  font-size: 20px;
+  padding: 10px;
+  color: #d38322;
+}
+
+.f1title h4{
+  font-size: 15px;
+  padding: 5px;
+}
+
+.border{
+  border-left: 1px dashed white;
+  height: 100px;
+  width: 1px;
+}
+  
+
+  .f1title a{
+    background-color: black;
+    color: white;
+    text-align: justify;
+    text-decoration: none;
+  }
+  .f1title a:hover{
+    color: #d38322;
+  }
+
+  .f1title a:focus{
+    color: #824700;
+  }
+  .bi-facebook {
+    font-size: 30px;
+    margin: 10px;
+
+  }
+
+  .bi-instagram{
+    font-size: 30px;
+    margin: 10px;
+  }
+
+
+
+  .border2{
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #d38322;
+  }
+  .footer{
+    width: 100%;
+    background-color: #1d1d1b;
+    height: 220px;
+    text-align: center;
+
+  }
+  .img{
+    margin-top: 20px;
+   height: 150px;
+   margin: auto;
+  }
+
+ .nav-menu2{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    list-style-type: none;
+   text-align: center;
+    width: 80%;
+    margin: auto;
+   
+  }
+
+  .nav-menu2 .nav-item:first-child .nav-link:first-child{
+    color: #d38322;
+  }
+
+  @media only screen and (max-width:600px){
+      .f1{
+          max-width: 100%;
+          height: 450px;
+          display: flex;
+          flex-direction: column;
+       }
+       .f1title h3{
+          font-size: 15px;
+        }
+        
+        .f1title h4{
+          font-size: 12px;
+        
+        }
+      .border{
+          border-bottom: 1px dashed white;
+          height: 2px;
+          width: 50px;
+      }
+
+      .img{
+         height: 100px;
+        }
+      
+       .nav-menu2{
+          background-color: transparent;
+          flex-direction: column;
+          width: 90%;
+          margin: auto;
+
+         
+        }
+
+        .footer{
+          max-width: 100%;
+          height: 280px;
+      
+        }
+
+        .nav-menu2 a{
+          font-size: 15px;
+          padding: 50px;
+          margin: auto;
+        }
+        .nav-menu2 li{
+          padding-bottom: 5px;
+        }
+
+  }
+
+
+
+

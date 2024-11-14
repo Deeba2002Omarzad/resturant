@@ -1,0 +1,126 @@
+
+
+
+
+/*....... Testimonal ....*/
+
+
+/*...... Testimonal Slider ....*/
+.slider-container {
+    position: relative;
+    margin: auto;
+    border-radius: 10px;
+    width: 40%;
+    height: 200px;
+    text-align: center;
+    margin-top: 80px;
+  }
+  .testimonial {
+    display: none;
+  }
+  .testimonial.active {
+    display: block;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Lato' , sans-serif;
+    
+   
+  }
+  .button-container button {
+    margin: 0 5px;
+    background-color:#d38322;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    outline: none;
+    border: none;
+    height: 35px;
+    width: 6%;
+    border-radius: 5px;
+    margin-top: 10px;
+    
+  }
+  
+  .button-container button:hover{
+    background-color: white;
+    transition: all 0.5s;
+    border: 1px solid #d38322;
+    color: #d38322;
+     
+  }
+  /*....... Slider Ended......*/
+  
+  .fa-quote-left{
+    margin-top: 15px;
+    width: 20%;
+    opacity: 0.3;
+    font-size: 50px;
+    z-index: -1;
+  }
+  .testmain{
+    width: 90%;
+    margin: auto;
+  }
+  
+  .slider-container h3{
+    font-family: 'Great Vibes',cursive;
+    font-size: 40px;
+    color: #d38322;
+    
+  }
+  .slider-container h2{
+    font-family: 'Lato' , sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+  
+  }
+  .testmain p{
+    margin-top: 15px;
+    font-family: 'Lato' , sans-serif;
+    font-size: 20px;
+    color: #585754;
+    word-spacing: 5;
+    
+  }
+  
+  .testperson{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .testperson img{
+    border-radius: 100%;
+    height: 80px;
+    margin-right: 20px;
+  
+  }
+  
+  .testp1 h3{
+    font-family: 'Lato' , sans-serif;
+    font-size: 20px;
+    color: #1d1d1b;
+    margin-bottom: 10px;
+  
+  }
+  .testp1 h4{
+    font-family: 'Lato' , sans-serif;
+    font-size: 15px;
+    color: #3f3f3f;
+   
+  
+  }
+
+
+  @media only screen and (max-width:768px){
+    .slider-container {
+        width: 70%;
+        height: 280px;
+        
+      }
+  }

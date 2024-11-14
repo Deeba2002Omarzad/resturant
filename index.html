@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!---- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="menueitem.css">
+    <link rel="stylesheet" href="welcome.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="slider.css">
+   
+     
+
+
+    <!--...Fonts.....-->
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+
+    <!---....header...-->
+    <header class="header">
+        <div class="Logo">
+          <img src="logo22.png"  class="logo">
+        </div>
+        <ul class="nav-menu" id="navmenu">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="../About/About.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="../menue/index.html">Menue</a></li>
+          <li class="nav-item"><a class="nav-link" href="../contact/index.html">Contact Us</a></li>
+          <li class="nav-item"><button type="tel" id="phone"><i class="fa fa-phone"></i> <h3>078 658 5856</h3></button></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+    </header>
+ <!--.....Header area ended.....-->
+
+ <!--.......Slider.........-->
+    <div class="slider ">
+        <img class="slides active " src="caf.jpg" alt="Image 1">
+        <img class="slides" src="bg.jpg" alt="Image 2">
+        <img class="slides" src="ca.jpg" alt="Image 3">
+    </div>
+
+    <!----Caption -->
+    <div class="caption">
+        <h1 id="title">Welcome,Are You Hungery?</h1>
+        <a href="../contact/index.html" target="_blank"><button id="book" > Reserve Now</button></a>
+    </div>
+
+
+        <div class="nav-dots">
+            <span class="dot active-dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+
+  <!--......Slider Area Ended .......-->
+    
+ <!-- .......Introduction....-->
+
+  <article class="inter">
+    <div class="leftpics">
+        <div class="pizza">
+        <img src="pizza.jpg" id="pizza" alt="pizza"> <div class="overlay"></div> </div>
+        
+        <div class="rightpics">
+            <img src="shorma.jpg" alt="">
+            <img src="kobeda.jpg" alt="">
+        </div>
+        
+    </div>
+    <div class="rightcontent">
+        <h3>Welcome to Our</h3>
+        <h2>Resturant</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa id error minima laboriosam aut eligendi reprehenderit praesentium mollitia quibusdam. Sit minima assumenda repudiandae ipsam id doloribus in sunt modi voluptas.
+        Voluptatem maxime maiores eum aperiam, tempore error nisi inventore in quam id, fuga sequi natus delectus neque nostrum! Officiis eos laboriosam eum. Dolores eos atque culpa iste! Voluptatibus, labore. Enim.
+        </p>
+    </div>
+</article>
+
+
+  <!-----Abous Part-->
+    <div class="about">
+        <div class="overlay2">
+             <div class="aboutcontent">
+                      <h3>We are Popular</h3>
+                      <h2>About Us</h2>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa id error minima laboriosam aut eligendi reprehenderit praesentium mollitia quibusdam. Sit minima assumenda repudiandae ipsam id doloribus in sunt modi voluptas.
+                      Voluptatem maxime maiores eum aperiam, tempore error nisi inventore in quam id, fuga sequi natus delectus neque nostrum! Officiis eos laboriosam eum. Dolores eos atque culpa iste! Voluptatibus, labore. Enim.
+                      </p>
+                      <a href="../About/About.html" target="_blank"><button class="aboutbtn">Know Us More </button></a>
+     
+               </div>
+        </div>
+             <div class="charchter">
+                 <img src="chef.png" alt="">
+             </div>
+            
+        
+    </div>
+
+
+    <!----......About part ended.......-->
+
+    <!---.....Menue Part.......-->
+
+    <section class="menue">
+        <img src="pizzamenue.png"  class="pizza1" alt="">
+            <div class="menuecontent">
+                     <h3>Discover</h3>
+                     <h2>Our Menue</h2>
+                     <p>Lorem, ipsum dolor sit amet consecte tempore error nisi inventore in quam id, fuga sequi natus delectus neque nostrum! Officiis eos laboriosam eum. Dolores eos atque culpa iste! Voluptatibus, labore. Enim.
+                     </p>
+                     <a href="../menue/index.html" target="_blank"><button class="menuebtn">View Full Menue </button></a>
+    
+              </div>
+        <img src="egg.png"  class="egg" alt="">
+      
+    </section>
+
+    <!---Sub Menue-->
+
+    <aside>
+        <img src="qable.jpg" class="asidebg" alt="">
+        <div class="counters">
+                <div id="counter1">0 </div> 
+                <div id="counter2">0</div>
+                <div id="counter3">0</div>
+                <div id="counter4">0</div>
+        </div>
+        
+
+        <ul class="items">
+            <li>Menue Item</li>
+            <li>Visitors Everday</li>
+            <li>Years Experience</li>
+            <li>Taste & Fun</li>
+        </ul>
+    </aside>
+
+
+
+    <!-----Testimonal -->
+    <div class="slider-container">
+                <h3>What Our</h3>
+                 <h2>Customers Say</h2>
+                 <i class="fa fa-quote-left" aria-hidden="true"></i>
+        <div class=" testimonial active testimonal1">
+            <div class=" testmain">
+                <p> fuga sequi natus delectus neque nostrum! Officiis eos laboriosam eum. Dolores eos atque culpa iste! Voluptatibus, labore. Enim.
+                </p>
+                <div class="testperson">
+                    <img src="testp.jpg" class="test" alt="">
+                    <div class="testp1">
+                        <h3>Ahmad Walid</h3>
+                        <h4>Busniessman</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <!-----Testional part 2-->
+
+        <div class=" testimonial  testimonal1">
+            <div class=" testmain">
+                <p> fuga sequi natus delectus neque nostrum! Officiis eos laboriosam eum. Dolores eos atque culpa iste! Voluptatibus, labore. Enim.
+                </p>
+                <div class="testperson">
+                    <img src="boy.jpg" class="test" alt="">
+                    <div class="testp1">
+                        <h3>Mohammad Zamani</h3>
+                        <h4>Salesman</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!----Testimonal Part3-->
+        <div class=" testimonial  testimonal1">
+            <div class=" testmain">
+                <p> fuga sequi natus delectus neque nostrum! Officiis eos laboriosam eum. Dolores eos atque culpa iste! Voluptatibus, labore. Enim.
+                </p>
+                <div class="testperson">
+                    <img src="girl.jpg" class="test" alt="">
+                    <div class="testp1">
+                        <h3>Mobina</h3>
+                        <h4>Engineer</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-----Buttons -->
+        <div class="button-container">
+            <button onclick="showTestimonial(0)">1</button>
+            <button onclick="showTestimonial(1)">2</button>
+            <button onclick="showTestimonial(2)">3</button>
+          </div>
+    </div>
+    
+
+
+
+    <!----- ...Footer ....-->
+
+
+    <footer>
+       
+            <div class="f1">
+                <div class="f1title">
+                      <h3>Address</h3>
+                      <h4> Shahr-e-now Haji yaqoob square, next to computer plaza</h4>
+                      <h4>Kart-e-char 3rd District street, in front of Yummy</h4>
+                      <h4>Lesa-Maryam Opposite to Makhfi Badkhshi</h4>
+                </div>
+                <div class="border"></div>
+                <div class="f1title">
+                    <h3>Follow Us</h3>
+                    <a  target="_blank" href="https://www.bing.com/ck/a?!&&p=c73d2fe4df8b1f24JmltdHM9MTcyOTk4NzIwMCZpZ3VpZD0zZmRkNWY0MC0wOTcwLTZmMzMtMjRkZS00YjZiMDhhYjZlMjMmaW5zaWQ9NTE0Mw&ptn=3&ver=2&hsh=3&fclid=3fdd5f40-0970-6f33-24de-4b6b08ab6e23&psq=kabul+cafertria&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL3Byb2ZpbGUucGhwLz9pZD0xMDAwNjQ3OTUwMjY5NjI&ntb=1"><i class="bi bi-facebook"></i> </a>
+                     <a target="_blank" href="https://www.bing.com/ck/a?!&&p=9bf6dab0df95a649JmltdHM9MTcyOTk4NzIwMCZpZ3VpZD0zZmRkNWY0MC0wOTcwLTZmMzMtMjRkZS00YjZiMDhhYjZlMjMmaW5zaWQ9NTE3NQ&ptn=3&ver=2&hsh=3&fclid=3fdd5f40-0970-6f33-24de-4b6b08ab6e23&psq=kabul+cafertria&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS90aGVjYWZldGVyaWFrYWJ1bC8&ntb=1"><i class="bi bi-instagram"></i>  </a>
+                </div>
+                <div class="border"></div>
+                <div class="f1title">
+                    <h3>Contact Us</h3>
+                    <h4>(+93) 78 658 5856</h4>
+                </div>
+            </div>
+
+            <div class="border2"></div>
+            <div class="footer">
+                    <img src="logo22.png" alt=""  class="img">
+               
+                    <ul class="nav-menu2" id="navmenu">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Menue</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Contact Us</a></li>
+                        
+                    </ul>
+                
+            </div>
+     
+    </footer>
+
+  
+        
+      
+
+
+ 
+ 
+    
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+     
+    
+    <script src="home.js"></script>
+    
+</body>
+</html>

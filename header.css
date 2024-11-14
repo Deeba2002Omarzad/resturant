@@ -1,0 +1,336 @@
+
+body{
+    overflow-x: hidden;
+}
+
+
+header{
+    font-family: 'Lato' , sans-serif;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    height: 13vh;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+  }
+  
+
+  .Logo{
+    margin-top: 20px;
+    height: 150px;
+    width: 15%;
+    background-image: radial-gradient(#b46a11,#7d4412);
+    border-radius: 0 0px 100px 100px;  
+    opacity: 0.9; 
+    text-align: center; 
+    margin-left: 60px;
+
+  }
+  .logo{
+    height: 135px;
+   
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+   margin-left: 280px;
+    width: 88%;
+    background-color: rgb(59, 60, 60, 0.7);
+    border-radius: 35px;
+   
+  }
+
+  .nav-link{
+    font-family: 'Lato' , sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+    
+    
+  }
+  .nav-item{
+    padding: 15px;
+  }
+  
+   .nav-menu .nav-item:first-child .nav-link:first-child{
+    color: #d38322;
+  }
+
+  .nav-item .nav-link:hover{
+    color:#d38322 ;
+  }
+  #dropdown{
+    font-family: 'Lato' , sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    width: 45%;
+    
+  }
+  #dropdown option{
+    font-family: 'Lato' , sans-serif;
+    text-decoration: none;
+    color: #d38322;
+    font-size: 20px;
+    border: none;
+    background-color: black;
+  }
+
+   #phone{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 5vh;
+    margin-left: 10px;
+    color: #d38322;
+    font-size: 17px;
+    background-color:transparent;
+    border-radius: 30px;
+    border: none;
+    
+}
+   #phone:focus{
+    color: white;
+    background-color: #d38322;
+   }
+  
+
+   .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 25px;
+    width: 30px;
+    cursor: pointer;
+
+  }
+  .hamburger .bar {
+    width: 100%;
+    height: 4px;
+    background-color: #d38322;
+    border-radius: 5px;
+  }
+
+
+/* Add media queries for responsiveness  for 400 and 768 */
+
+
+@media screen and (max-width:768px){
+
+    header{
+        justify-content: space-around;
+        height: 100px;
+        max-width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+  .Logo{
+    height: 85%;
+    width: 30%;
+    margin-top: 0;
+     
+
+  }
+
+  .logo {
+    height: 90%;
+    
+
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  #phone {
+    font-size: 15px;
+  }
+}
+
+
+  @media screen and  (max-width:768px) {
+   
+      header{
+        position: absolute;
+        right: 0;
+        left: -30%;
+      }
+  
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      height: 300px;
+      background-color: black;
+      color: white;
+      z-index: 1;
+      border-radius: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 50%;
+      padding: 10px;
+      text-align: left;
+      
+     
+    }
+    .nav-link{width: 100%;}
+    .nav-menu.active {
+      display: flex;
+    }
+    .hamburger {
+      display: flex;
+      height: 25px;
+      position: absolute;
+      top: 20px;
+      right:0;
+    
+    }
+    #phone{
+        width: 100%;}
+        
+        
+    
+    
+  }
+
+  /*........ Ended responsive for 400 and 768 px ...... */
+
+
+@media screen and (min-width: 769px) and (max-width:992px) {
+    header{
+        justify-content: space-around;
+        height: 100px;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+   .nav-menu{
+    margin: auto;
+    margin-left: 80px;
+    width: 100%;
+    text-align: center;
+   }
+  
+  .Logo{
+    width: 25%;
+    height: 100px;
+    margin-top: 0;
+  }
+  .logo{
+    height: 90%;
+  }
+
+
+  .nav-link {
+    font-size: 13px;
+    padding: 3px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .nav-item{
+    padding: 5px;
+  }
+  
+  #phone {
+    font-size: 13px;
+    width: 100%;
+   
+  
+  }
+  #phone h3{
+    margin-right: 20px;
+  }
+}
+  /*....... Header Area Ended ........*/
+
+  /*....... navbar Responsive .......*/
+
+/* @media only screen and (min-width:600px) and (max-width:992px){
+  .Logo{
+    margin-left: 50px;
+    height: 90px;
+    width: 65%;
+    z-index: 1;
+  }
+  .logo{
+    height: 90px;
+  
+  }
+
+  .nav-menu li:first-child a:first-child{
+    color: white;
+  }
+  #phone{
+    color: white;
+    margin-left: 5px;
+  }
+}  */
+
+  
+
+/* @media only screen and (max-width:600px){
+  .Logo{
+    margin-left: 50px;
+    height: 90px;
+    width: 65%;
+    z-index: 1;
+  }
+  .logo{
+    height: 90px;
+  
+  }
+
+  .nav-menu li:first-child a:first-child{
+    color: white;
+  }
+  #phone{
+    color: white;
+    margin-left: 5px;
+  }
+
+}  */
+
+  
+  
+  
+  
+  /* @media only screen and (max-width:600px){ */
+    /* .Logo{
+      margin-left: 50px;
+      height: 90px;
+      width: 65%;
+      z-index: 0;
+    }
+    .logo{
+      height: 90px;
+    
+    }
+  
+    .nav-menu li:first-child a:first-child{
+      color: white;
+    }
+    #phone{
+      color: white;
+      margin-left: 5px;
+    }
+  
+  } */
+
+

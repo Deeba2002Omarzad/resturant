@@ -1,0 +1,207 @@
+
+
+/*........ Sub Menue .......*/
+aside{
+    width: 100%;
+    max-width: 100%;
+    height: 40vh;
+    background-color: black;
+    overflow: hidden;
+    font-family: 'Great Vibes',cursive;
+    font-weight: bold;
+    
+    
+   
+   }
+   .asidebg{
+    z-index: -1;
+    width: 100%;
+    margin-top: -170px;
+    opacity: 0.3;
+  
+   }
+  
+  .items{
+    font-family: 'Lato' , sans-serif;
+    position: absolute;
+    top: 298vh;
+    left: 18vh;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+  
+  }
+  
+  .items li{
+    padding: 45px;
+  }
+  
+  
+  
+  
+  .counters{
+    position: absolute;
+    top: 275vh;
+    left:28vh;
+    color: white;
+    list-style-type: none;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .counters div{
+    padding: 120px;
+  }
+  @media only screen and  (max-width:768px){
+    aside{
+      width: 100%;
+      max-width: 100%;
+      height: 400px;
+      background-color: black;
+      overflow: hidden;
+      font-family: 'Great Vibes',cursive;
+      font-weight: bold;
+      
+      
+     
+     }
+     .asidebg{
+      height: 600px;
+    
+     }
+    .items{
+      
+      position: absolute;
+      top: 1950px;
+      left: -50px;
+      color: white;
+      list-style-type: none;
+      display: block;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 20px;
+      width: 90%;
+    
+    }
+    
+    .items li{
+      padding: 30px;
+    }
+    .counters{
+      display: block;
+      float: right;
+      position: absolute;
+      top: 1950px;
+      right:0;
+      margin-left: 100px;
+      color: white;
+      list-style-type: none;
+      font-size: 28px;
+    }
+    
+    .counters div{
+      padding: 25px;
+    }
+  }
+  @media only screen and (min-width:769px)  and (max-width:990px){
+    aside{
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+      
+      
+     
+     }
+    .items{
+      
+      position: absolute;
+      top: 1950px;
+      left: 0px;
+      color: white;
+      list-style-type: none;
+      display: block;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 20px;
+      width: 90%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+    
+    }
+    
+    .items li{
+      padding: 30px;
+    }
+    .counters{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: absolute;
+      top: 1840px;
+      left:-60px;
+      margin-left: 100px;
+      color: white;
+      list-style-type: none;
+      font-size: 28px;
+    }
+    
+    .counters div{
+      padding: 90px;
+    }
+   
+  }
+  
+  @media only screen and (min-width:990px)  and (max-width:1500px){
+    aside{
+      width: 100%;
+      max-width: 100%;
+      height: 200px;
+    }
+      
+      .items{
+      
+        position: absolute;
+        top: 2130px;
+        left: 0px;
+        color: white;
+        list-style-type: none;
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 25px;
+        width: 90%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+      
+      }
+      
+      .items li{
+        padding: 30px;
+      }
+      .counters{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        top: 2010px;
+        left:-10px;
+        margin-left: 100px;
+        color: white;
+        list-style-type: none;
+        font-size: 30px;
+      }
+      
+      .counters div{
+        padding: 90px;
+        margin: 20px;
+      }
+   
+  }
